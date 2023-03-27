@@ -13,6 +13,7 @@
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kroxylicious-api.version>0.1.0</kroxylicious-api.version>
+        <kroxylicious.version>0.1.0</kroxylicious.version>
     </properties>
     <repositories>
         <repository>
@@ -33,9 +34,19 @@
             <version>${kroxylicious-api.version}</version>
         </dependency>
         <dependency>
+            <groupId>io.kroxylicious</groupId>
+            <artifactId>kroxylicious</artifactId>
+            <version>${kroxylicious.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.24.2</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
